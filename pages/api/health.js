@@ -1,0 +1,5 @@
+function handler(req, res) {
+  res.status(200).json({ status: 'OK', timestamp: new Date() });
+}
+
+export default handler;

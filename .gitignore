@@ -26,3 +26,6 @@ build/
 
 # Vercel
 .vercel/
+
+# Next
+.next/
