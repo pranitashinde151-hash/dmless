@@ -1,0 +1,31 @@
+{
+  "name": "dmless",
+  "version": "1.0.0",
+  "description": "Smart Recruitment Platform - Full Stack",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "vite",
+    "dev:backend": "node server/server.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "npm run dev",
+    "backend": "cd backend && npm install && node server.js",
+    "frontend": "cd fronted && python -m http.server 8000"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "mongodb": "^5.7.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.2"
+  }
+}
